@@ -110,3 +110,7 @@ console.log("address của studient1 là: ", studient1.address);
 console.log("phone của studient1 là: ", studient1.phone);
 
 
+// BTVN buổi 2: 
+// B1: Dùng vòng lặp for để in ra các số chẵn từ 1 đến 60
+// B2: Tạo ra một đối tượng myInfo chứa các thông tin cá nhân: fullName, age, gender, email, phone, address.
+//     In ra màn hình các thông tin trên màn hình console
