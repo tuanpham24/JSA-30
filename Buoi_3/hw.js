@@ -30,3 +30,7 @@ console.log(myInfo.name)
 console.log(myInfo.email)
 
 
+// ==> Cập nhật code lên git khi đã khởi tạo dự án thành công
+// B1: Chạy lệnh: git add để thêm những file vừa cập nhật
+// B2: git commit -m "Giải thích cho những thay đổi vừa rồi"
+// B3: git push 
