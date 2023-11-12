@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.page-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form input {
+  padding: 7px 10px;
+  width: 80%;
+}
+
+form button {
+  padding: 7px 10px;
+  width: 15%;
+  background-color: rgba(217, 112, 147, 0.9);
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgba(217, 112, 147);
+}
