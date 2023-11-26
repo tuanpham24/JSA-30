@@ -1,0 +1,45 @@
+
+/*Lưu những style của các phần chung: Navbar, footer*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Căn giữa các phần của trang */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* flex */
+.d-flex {
+  display: flex;
+}
+
+/* navbar */
+header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px 0px;
+}
+.header-content {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav .nav-item .nav-link {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.nav .nav-item:hover .nav-link {
+  color: palevioletred;
+}

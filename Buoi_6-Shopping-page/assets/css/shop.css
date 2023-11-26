@@ -1,0 +1,13 @@
+
+
+.product-container {
+  flex-wrap: wrap;
+}
+.product-item {
+  width: 20%;
+}
+
+.product-item img {
+  max-width: 100%;
+}
+

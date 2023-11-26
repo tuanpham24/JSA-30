@@ -1,0 +1,4 @@
+- Trong thực tế: 
+  VD Các trang thưong mại điện tử sẽ có 1 nơi để lưu trữ dữ liệu
+  => Cơ sở dữ liệu(Database)
+  - Dùng các câu lệnh để lấy dữ liệu từ CSDL ra và trả về (JSON)
