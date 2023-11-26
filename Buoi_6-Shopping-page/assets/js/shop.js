@@ -1,6 +1,7 @@
 
 // DOM
 const productContainer = document.querySelector(".product-container");
+const searchInput = document.querySelector("#search-input");
 
 // Fake data: Tạo 1 mảng chứa các đối tượng sản phẩm
 const productList = [
@@ -66,27 +67,55 @@ const productList = [
   },
 ]
 
-function renderProductList() {
-  let htmls = "";
-  console.log("Trước khi dùng vòng lặp", htmls);
+// Hàm này để giải thích về tham số của hàm
+function logger(a) {
+  console.log(a);
+}
+logger("Hello")
 
-  for (let i = 0; i < productList.length; i++) {
+function renderProductList(listProduct) {
+  let htmls = "";
+  // console.log("Trước khi dùng vòng lặp", htmls);
+
+  for (let i = 0; i < listProduct.length; i++) {
     // Qua mỗi lần lặp thì nối thêm sản phẩm vào htmls
     // Dấu " ` " ở dưới dấu ESC
-    
     htmls += `
       <div class="product-item">
-        <img src=${productList[i].image}>
-        <h3>${productList[i].name}</h3>
+        <img src=${listProduct[i].image}>
+        <h3>${listProduct[i].name}</h3>
       </div>
     `
   }
 
-  console.log("Sau khi dùng vòng lặp", htmls);
+  // console.log("Sau khi dùng vòng lặp", htmls);
 
   // Sau khi nhận được chuỗi htmls thì sẽ gắn chuỗi htmls vào DOM productContainer
   productContainer.innerHTML = htmls
 }
 
-// Gọi hàm renderProductList để chạy
-renderProductList()
+
+// Gọi hàm renderProductList và truyền tham số thật(productList) để chạy
+renderProductList(productList)
+
+// Hàm xử lý tìm kiếm sản phẩm theo tên sản phẩm
+function searchProducts(searchString) {
+
+  // Tạo 1 biến foundProduct gán bằng những sản phẩm mà có tên bao gồm chuỗi tìm kiếm nhập tử ô input
+  let foundProduct = productList.filter( function (product) {
+
+    // Trả về những sản phẩm mà có tên bao gồm chuỗi tìm kiếm nhập tử ô input
+    // toLowerCase() => chuyển chuỗi thành chuỗi viết thường. Mục đích là khi người dùng nhập chữ hoa 
+      // hay chữ thường thì đều tìm kiếm được
+    return product.name.toLowerCase().includes(searchString.toLowerCase());
+  } )
+
+  // Render lại danh sách sản phẩm với tham số là foundProduct
+  renderProductList(foundProduct)
+}
+
+searchInput.addEventListener("input", function(event) {
+  // event.target.value là chuỗi mà người dùng nhập vào ô input
+  searchProducts(event.target.value)
+})
+
