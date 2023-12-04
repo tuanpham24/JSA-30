@@ -1,0 +1,40 @@
+
+.author-container {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  border-radius: 7px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.author-container .form-group {
+  margin: 8px 0px;
+}
+
+.author-container form input {
+  width: 90%;
+  padding: 7px 10px;
+}
+
+.author-container .form-group .date-label {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.author-container .form-group button {
+  width: 90%;
+  padding: 8px 0px;
+  background-color: rgb(213, 3, 3);
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.author-container .form-group button:hover {
+  background-color: rgb(182, 2, 2);
+}

@@ -63,7 +63,7 @@ const productList = [
     id: 10,
     name: 'Sabrina 1 Magnetic EP',
     price: 900,
-    image: './assets/images/10.webp'
+    image: './assets/images/10.webp',
   },
 ]
 
@@ -83,7 +83,10 @@ function renderProductList(listProduct) {
     htmls += `
       <div class="product-item">
         <img src=${listProduct[i].image}>
-        <h3>${listProduct[i].name}</h3>
+        <div class="product-text">
+          <h3>${listProduct[i].name}</h3>
+          <p class="price">${listProduct[i].price}</p>
+        </div>
       </div>
     `
   }
