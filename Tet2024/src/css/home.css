@@ -1,0 +1,31 @@
+
+
+main .slider {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../images/banner-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .intro {
+  margin-top: 30px;
+}
+main .intro .video {
+  width: 50%;
+}
+
+main .intro .intro-text {
+  width: 50%;
+  padding: 15px;
+  font-weight: 300;
+}
+
+.intro .intro-text h3 {
+  font-weight: 300;
+}
+
+.intro .video iframe{
+  width: 100%;
+  height: 350px;
+}

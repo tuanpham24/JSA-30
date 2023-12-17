@@ -35,6 +35,12 @@ function handleSignUp(event) {
     return;
   }
 
+  // Kiểm tra mặt khẩu có khớp hay không
+  if(password != passwordRepeat) {
+    alert("Password is not match");
+
+    return;
+  }
   // Gói các thuộc tính trên vào trong object accountData
   let accountData = {
     fullName,
@@ -44,7 +50,6 @@ function handleSignUp(event) {
     password,
     passwordRepeat,
   };
-
 
 
   // Thêm account data vào account list

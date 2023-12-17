@@ -1,0 +1,25 @@
+
+/* Chứa style của phần header */
+header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px 0px;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+}
+.menu {
+  list-style: none;
+}
+
+.menu .menu-item a{
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.author > div {
+  padding: 0px 10px;
+}

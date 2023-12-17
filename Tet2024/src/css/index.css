@@ -1,0 +1,34 @@
+
+/* Chứa nhứng style dùng chung, trang nào cũng cần import */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  margin-top: 52px;
+}
+/* flex-box */ 
+/* BEM CSS */
+/* TailwindCSS */
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
